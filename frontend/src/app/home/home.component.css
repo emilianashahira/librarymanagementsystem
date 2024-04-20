@@ -1,0 +1,36 @@
+@import url('https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-straight/css/uicons-regular-straight.css');
+
+h1 {
+    text-align: center;
+    font-family: "Georgia", Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+header {
+  background-image : url('src/assets/home.jpg');
+  background-size: cover; 
+}
+
+section {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 60px 90px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 60px;
+  border-radius: 25px;
+}
+
+.button1 {background-color: #363843;} 
+.button2 {background-color: #363843;} 

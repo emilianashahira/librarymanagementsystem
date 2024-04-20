@@ -1,0 +1,24 @@
+p{
+    text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+.card-header{
+    text-align: center;
+    font-weight: bold;
+}
+
+.card1{
+    justify-content: center;
+    padding: 10px;
+    margin: 0 auto;
+  }
+
+.card2{
+    justify-content: center;
+    padding: 10px;
+    margin: 0 auto;
+  }
