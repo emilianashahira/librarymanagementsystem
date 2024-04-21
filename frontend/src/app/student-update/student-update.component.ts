@@ -35,10 +35,10 @@ export class StudentUpdateComponent implements OnInit {
       bookTitle: this.service.getBookTitle(),
       student: this.service.getOneStudent(this.router.snapshot.params['Id'])
     }).subscribe(({ bookTitle, student }) => {
-      // console.log('Student Data:', student.data[0]); // Add this line
+
 
       this.bookTitle = bookTitle.data;
-      // console.log('Book Title:', this.bookTitle); // Add this line
+
 
       this.studentForm.patchValue({
         Id: student.data[0].Id,
@@ -53,7 +53,7 @@ export class StudentUpdateComponent implements OnInit {
 
     getbookTitle(){
     this.service.getBookTitle().subscribe((result: any)=> {
-      // console.log('Service Response:', result); // Add this line
+
       this.bookTitle = result.data;
     })
   }

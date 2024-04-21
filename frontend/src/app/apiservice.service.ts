@@ -43,8 +43,8 @@ deleteStudent(Id: any): Observable<any> {
 
 //update student
 updateStudent(Id: any, student: any): Observable<any> {
-  console.log('Updating student with Id:', Id); // Add this line
-  console.log('Student data:', student); // Add this line
+  console.log('Updating student with Id:', Id); 
+  console.log('Student data:', student); 
   return this._http.put(`${updateStudentUrl}/${Id}`, student);
 
 }

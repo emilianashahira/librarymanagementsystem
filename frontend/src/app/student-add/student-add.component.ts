@@ -40,16 +40,10 @@ export class StudentAddComponent implements OnInit {
       }
   }
 
-  // getbookTitle(){
-  //   this.http.get('http://localhost:8080/bookTitle').subscribe((result: any)=> {
-  //     this.bookTitle = result.data;
-  //   })
-  // }
-
   getbookTitle(){
     this.service.getBookTitle().subscribe((result: any)=> {
       this.bookTitle = result.data;
-      console.log('Book Title:', this.bookTitle); // Add this line
+      console.log('Book Title:', this.bookTitle); 
     })
   }
 
@@ -70,12 +64,12 @@ export class StudentAddComponent implements OnInit {
         console.log('Form Errors:', this.studentForm.errors);
         
         this.service.addStudent( this.studentForm.value ).subscribe((res)=>{
-          console.log('Response:', res); // Log the response
+          console.log('Response:', res); 
           this.studentForm.reset();
           this.successmsg = 'Successfully Add New Student';
         },
         (error) => {
-          console.error('Error:', error); // Log the error
+          console.error('Error:', error); 
           this.errormsg = 'Add New Student Unsuccessful';
         });
       }

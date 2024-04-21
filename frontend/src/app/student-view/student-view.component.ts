@@ -19,7 +19,7 @@ export class StudentViewComponent implements OnInit {
 
   constructor(private service:ApiserviceService) { }
 
-  listData: StudentData[] = []; // Add this line here
+  listData: StudentData[] = []; 
   successmsg:any;
 
   ngOnInit(): void {
